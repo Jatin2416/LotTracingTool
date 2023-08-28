@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Lot Tracing Tool</title>
+</head>
+<body>
+  <div class="container">
+    <div class="image-container">
+      <img src="sitemap.jpg" alt="Site Map" id="site-map">
+      <canvas id="canvas"></canvas>
+    </div>
+    <div class="button-container">
+      <button id="start-tracing">Start Tracing</button>
+      <button id="done-tracing" disabled>Done</button>
+    </div>
+    <div class="modal" id="success-modal">
+      <div class="modal-content">
+        <p>Polygon Points saved successfully!</p>
+        <button id="close-modal">OK</button>
+      </div>
+    </div>
+  </div>
+  <script src="script.js" defer></script>
+</body>
+</html>

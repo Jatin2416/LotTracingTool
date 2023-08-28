@@ -1,0 +1,80 @@
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  .image-container {
+    flex-grow: 1;
+    overflow: auto;
+    position: relative;
+    /* display: flex; 
+    align-items: center;=
+    justify-content: center; */
+    
+  }
+  
+  /* #site-map {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    user-drag: none;
+    user-select: none;
+    overflow: auto;
+  } */
+  #site-map {
+    width: 100%;
+    height: auto; /* Allow the image to adjust its height while maintaining aspect ratio */
+    user-drag: none;
+    user-select: none;
+    object-fit: contain; 
+  }
+  #canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .button-container {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+  }
+  /* Add this to your CSS */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+#close-modal {
+  margin-top: 10px;
+}
+
+  button {
+    margin: 0 10px;
+    padding: 10px 20px;
+  }  
